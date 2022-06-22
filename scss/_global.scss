@@ -1,7 +1,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 10px;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --dur: 1s;
 }
 
 html {
@@ -12,3 +18,4 @@ html {
 body {
     font-size: 1.6rem;
 }
+
