@@ -1,0 +1,98 @@
+// carousel start
+
+.carousel .carousel-inner .carousel-item img {
+    height: 800px;
+    object-fit: cover;
+    opacity: 0.7;
+
+}
+
+.carousel .carousel-inner .carousel-item {
+    position: relative;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption {
+    
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        text-align: start;
+        margin-bottom: 25px;
+    }
+    
+
+    a button {
+        width: 150px;
+        padding: 5px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+
+}
+
+// carousel end
+
+
+//cards start
+
+
+.cards__header {
+    color: antiquewhite;
+    margin-top: 70px;
+    font-size: 50px;
+    margin-left: 65px;
+}
+
+.cards {
+    margin: 50px 50px;
+}
+
+.cards .col .card img {
+    height: 250px;
+}
+
+.cards .col .card .card-body{
+    position: relative;
+    height: 350px;
+}
+
+.cards .col .card .card-body h2 {
+    margin: 20px 0;
+}
+
+.cards .col .card .card-body p {
+    position: absolute;
+    top: 130px;
+}
+
+.cards .col .card .card-body a {
+    position: absolute;
+    bottom: 15px;
+
+    button {
+        width: 120px;
+        font-size: 15px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+//cards end

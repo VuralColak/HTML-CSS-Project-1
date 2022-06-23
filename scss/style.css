@@ -1,7 +1,9 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
+*,
+*::before,
+*::after {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
 }
@@ -139,7 +141,6 @@ nav .nav__left {
 }
 nav .nav__left ul {
   float: left;
-  margin-left: 20px;
 }
 nav .nav__left ul li {
   display: inline-block;
@@ -151,7 +152,7 @@ nav .nav__left ul li a {
   text-decoration: none;
   font-size: 17px;
   text-transform: uppercase;
-  padding: 7px 13px;
+  padding: 7px 10px;
   border-radius: 10px;
 }
 nav .nav__left ul li a.active, nav .nav__left ul li a:hover {
@@ -574,11 +575,84 @@ main {
     line-height: 25px;
   }
 }
+.carousel .carousel-inner .carousel-item img {
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.7;
+}
+
+.carousel .carousel-inner .carousel-item {
+  position: relative;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  flex-direction: column !important;
+  position: absolute;
+  bottom: 30%;
+  left: 20%;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption p {
+  text-align: start;
+  margin-bottom: 25px;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption a button {
+  width: 150px;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.cards__header {
+  color: antiquewhite;
+  margin-top: 70px;
+  font-size: 50px;
+  margin-left: 65px;
+}
+
+.cards {
+  margin: 50px 50px;
+}
+
+.cards .col .card img {
+  height: 250px;
+}
+
+.cards .col .card .card-body {
+  position: relative;
+  height: 350px;
+}
+
+.cards .col .card .card-body h2 {
+  margin: 20px 0;
+}
+
+.cards .col .card .card-body p {
+  position: absolute;
+  top: 130px;
+}
+
+.cards .col .card .card-body a {
+  position: absolute;
+  bottom: 15px;
+}
+.cards .col .card .card-body a button {
+  width: 120px;
+  font-size: 15px;
+}
+
 .footer__line {
   width: 80%;
   height: 1px;
   background-color: rgb(150, 148, 148);
-  margin: 30px auto;
+  margin: 150px auto 30px auto;
 }
 
 footer {
@@ -586,6 +660,8 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 footer ul {
@@ -594,6 +670,7 @@ footer ul {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  padding-right: 2rem;
 }
 
 footer ul li {
