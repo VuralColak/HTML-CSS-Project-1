@@ -17,6 +17,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  background-color: black;
 }
 
 .band {
@@ -341,10 +342,15 @@ nav .nav__right .button2 .btn2:hover:before {
     width: 130px;
   }
 }
+main {
+  width: 100%;
+}
+
 .main_image {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/uzay-dunya-gunes-batimi-rotated.jpg);
   background-color: #cccccc;
-  height: 900px;
+  width: 100%;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -409,57 +415,40 @@ nav .nav__right .button2 .btn2:hover:before {
   display: flex;
   flex-direction: row;
   position: absolute;
-  bottom: -300px;
   justify-content: center;
   width: 100%;
 }
 
 .main_image .rockets .rocket1 {
   transform: translateY(2000px);
-  -webkit-animation: main-title 4s backwards 1.5s;
-          animation: main-title 4s backwards 1.5s;
+  -webkit-animation: main-rockets 4s forwards 1s;
+          animation: main-rockets 4s forwards 1s;
 }
 
-@-webkit-keyframes main-title {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-2000px);
-  }
-}
-
-@keyframes main-title {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-2000px);
-  }
-}
 .main_image .rockets .rocket2 {
   transform: translateY(2000px);
-  -webkit-animation: main-title 4s backwards 1s;
-          animation: main-title 4s backwards 1s;
+  -webkit-animation: main-rockets 4s forwards 0.3s;
+          animation: main-rockets 4s forwards 0.3s;
 }
 
-@keyframes main-title {
+.main_image .rockets .rocket3 {
+  transform: translateY(2000px);
+  -webkit-animation: main-rockets 4s forwards 1s;
+          animation: main-rockets 4s forwards 1s;
+}
+
+@-webkit-keyframes main-rockets {
   from {
-    transform: translateY(0);
+    transform: translateY(1000px);
   }
   to {
     transform: translateY(-2000px);
   }
 }
-.main_image .rockets .rocket3 {
-  transform: translateY(2000px);
-  -webkit-animation: main-title 4s backwards 1.5s;
-          animation: main-title 4s backwards 1.5s;
-}
 
-@keyframes main-title {
+@keyframes main-rockets {
   from {
-    transform: translateY(0);
+    transform: translateY(1000px);
   }
   to {
     transform: translateY(-2000px);
@@ -467,29 +456,174 @@ nav .nav__right .button2 .btn2:hover:before {
 }
 .main_image .main_header h1 {
   transform: translateY(2000px);
-  -webkit-animation: main-slogan 2s forwards 1.5s;
-          animation: main-slogan 2s forwards 1.5s;
+  -webkit-animation: main-header 2s forwards 1.2s;
+          animation: main-header 2s forwards 1.2s;
 }
 
-@-webkit-keyframes main-slogan {
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes main-slogan {
-  to {
-    transform: translateY(0);
-  }
-}
 .main_image .main_header h3 {
   transform: translateY(2000px);
-  -webkit-animation: main-slogan 2s forwards 1.5s;
-          animation: main-slogan 2s forwards 1.5s;
+  -webkit-animation: main-header 2s forwards 1.3s;
+          animation: main-header 2s forwards 1.3s;
 }
 
-@keyframes main-slogan {
+@-webkit-keyframes main-header {
   to {
     transform: translateY(0);
   }
+}
+
+@keyframes main-header {
+  to {
+    transform: translateY(0);
+  }
+}
+.social_media-buttons {
+  margin-top: 50px;
+  display: inline-block;
+  position: relative;
+}
+
+.social_media-buttons a {
+  background: #a1a1a1;
+  opacity: 0.8;
+  text-decoration: none;
+  color: #FFF;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  overflow: hidden;
+  position: relative;
+  line-height: 45px;
+  text-align: center;
+}
+
+.social_media-buttons a {
+  transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+}
+
+.social_media-buttons .facebook:hover {
+  background-color: #3b5998;
+  transform: rotate(360deg);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.social_media-buttons .twitter:hover {
+  background-color: #00aced;
+  transform: rotate(360deg);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.social_media-buttons .instagram:hover {
+  background-color: #bc2a8d;
+  transform: rotate(360deg);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.social_media-buttons .linkedin:hover {
+  background-color: #00aced;
+  transform: rotate(360deg);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.social_media-buttons .youtube:hover {
+  background-color: #bb0000;
+  transform: rotate(360deg);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.main_image .main_header .social_media-buttons {
+  transform: translateY(2000px);
+  -webkit-animation: main-buttons 2s forwards 1.5s;
+          animation: main-buttons 2s forwards 1.5s;
+}
+
+@-webkit-keyframes main-buttons {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes main-buttons {
+  to {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 700px) {
+  .social_media-buttons a {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .social_media-buttons a {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+}
+.footer__line {
+  width: 80%;
+  height: 1px;
+  background-color: rgb(150, 148, 148);
+  margin: 30px auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer ul .footer1 ul li img {
+  width: 60px;
+}
+
+footer ul .footer1 ul li h3 {
+  color: rgb(150, 148, 148);
+}
+
+footer ul .footer2 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 20px 0;
+  max-width: 300px;
+}
+
+footer ul .footer3 {
+  margin: 20px 0;
+}
+footer ul .footer3 p {
+  color: rgb(150, 148, 148);
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

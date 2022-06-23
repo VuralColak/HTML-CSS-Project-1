@@ -1,0 +1,137 @@
+.footer__line {
+    width: 80%;
+    height: 1px;
+    background-color: rgb(150, 148, 148);
+    margin: 30px auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+footer ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer ul .footer1 ul li img {
+
+    width: 60px;
+
+}
+
+
+footer ul .footer1 ul li h3 {
+
+    color: rgb(150, 148, 148);
+
+}
+
+footer ul .footer2 ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 20px 0;
+        max-width: 300px;
+    }
+
+footer ul .footer3 {
+
+        margin: 20px 0;
+
+        p {
+            color: rgb(150, 148, 148);
+            font-size: 12px;
+        }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// footer {
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     margin: 30px 0;
+
+//     .footer__line {
+//         width: 80%;
+//         height: 1px;
+//         background-color: rgb(150, 148, 148);
+//         margin-bottom: 30px;
+//     }
+
+//     .footer__left {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+
+//         .footer__header {
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-between;
+//             width: 180px;
+
+//             img {
+//                 width: 60px;
+//             }
+    
+//             h3 {
+//                 color: rgb(150, 148, 148);
+//             }
+//         }
+
+
+//         .footer__media {
+
+//             margin: 20px 0;
+
+//             a {
+//                 text-decoration: none;
+//                 margin: 0 10px;
+//                 cursor: pointer;
+                
+//             }
+
+            
+//         }
+//     }
+
+//     .footer__right {
+//         display: flex;
+//         justify-content: center;
+
+//         p {
+//             color: rgb(150, 148, 148);
+//         }
+//     }
+// }
