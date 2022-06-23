@@ -34,6 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 20px;
 }
 .band .band__left img {
   width: 75px;
@@ -124,6 +125,8 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 85px;
+  z-index: 99;
+  margin-top: 85px;
   display: flex;
   justify-content: space-between;
   background: linear-gradient(90deg, rgb(41, 65, 89) 5%, rgb(37, 40, 87) 40%, rgb(74, 113, 140) 70%, rgb(71, 114, 126) 100%);
@@ -336,5 +339,157 @@ nav .nav__right .button2 .btn2:hover:before {
   nav .nav__right .button2 a {
     font-size: 12px;
     width: 130px;
+  }
+}
+.main_image {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/uzay-dunya-gunes-batimi-rotated.jpg);
+  background-color: #cccccc;
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main_image .main_header {
+  text-align: center;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main_image .main_header h1 {
+  font-family: "Patrick Hand", cursive, sans-serif;
+  font-weight: bold;
+  font-size: 75px;
+  margin-bottom: 30px;
+  background: -webkit-linear-gradient(90deg, rgb(3, 128, 250) 0%, rgb(233, 234, 240) 33%, rgb(55, 81, 107) 72%, rgb(175, 199, 205) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main_image .main_header h3 {
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 30px;
+  background: -webkit-linear-gradient(90deg, rgb(65, 99, 133) 0%, rgb(233, 234, 240) 33%, rgb(65, 94, 122) 72%, rgb(138, 167, 175) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 920px) {
+  .main_image .main_header {
+    top: 300px;
+  }
+
+  .main_image .main_header h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .main_image .main_header h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 660px) {
+  .main_image .main_header {
+    top: 300px;
+  }
+
+  .main_image .main_header h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .main_image .main_header h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+.main_image .rockets {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: -300px;
+  justify-content: center;
+  width: 100%;
+}
+
+.main_image .rockets .rocket1 {
+  transform: translateY(2000px);
+  -webkit-animation: main-title 4s backwards 1.5s;
+          animation: main-title 4s backwards 1.5s;
+}
+
+@-webkit-keyframes main-title {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+@keyframes main-title {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+.main_image .rockets .rocket2 {
+  transform: translateY(2000px);
+  -webkit-animation: main-title 4s backwards 1s;
+          animation: main-title 4s backwards 1s;
+}
+
+@keyframes main-title {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+.main_image .rockets .rocket3 {
+  transform: translateY(2000px);
+  -webkit-animation: main-title 4s backwards 1.5s;
+          animation: main-title 4s backwards 1.5s;
+}
+
+@keyframes main-title {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+.main_image .main_header h1 {
+  transform: translateY(2000px);
+  -webkit-animation: main-slogan 2s forwards 1.5s;
+          animation: main-slogan 2s forwards 1.5s;
+}
+
+@-webkit-keyframes main-slogan {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes main-slogan {
+  to {
+    transform: translateY(0);
+  }
+}
+.main_image .main_header h3 {
+  transform: translateY(2000px);
+  -webkit-animation: main-slogan 2s forwards 1.5s;
+          animation: main-slogan 2s forwards 1.5s;
+}
+
+@keyframes main-slogan {
+  to {
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */
