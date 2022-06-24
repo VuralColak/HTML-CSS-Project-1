@@ -740,6 +740,7 @@ main {
 .staff__items p {
   color: whitesmoke;
   margin-top: 30px;
+  line-height: 25px;
 }
 
 .staff__items__header {
