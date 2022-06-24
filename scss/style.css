@@ -660,6 +660,110 @@ main {
   transform: scale(1.05);
 }
 
+.staff__container, .vision-mission__container .mission__contents, .vision-mission__container .vision__contents, .about__contents, .main__about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-mission__container .mission__contents h1, .vision-mission__container .vision__contents h1, .about__contents h1, .who__contents .who__text h1 {
+  font-size: 40px;
+  color: antiquewhite;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.vision-mission__container .mission__contents p, .vision-mission__container .vision__contents p, .about__contents p, .who__contents .who__text p {
+  font-size: 20px;
+  color: var(--secondary);
+  text-align: center;
+}
+
+.main__about {
+  flex-direction: column;
+  margin: 30px 200px;
+}
+
+.who__contents {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  justify-items: center;
+  margin-top: 100px;
+}
+.who__contents img {
+  width: 300px;
+}
+.about__contents {
+  flex-direction: column;
+  margin-top: 200px;
+}
+.vision-mission__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 50px;
+  margin-top: 200px;
+}
+.vision-mission__container .vision__contents img {
+  width: 300px;
+}
+.vision-mission__container .vision__contents p {
+  margin-left: 10px;
+}
+.vision-mission__container .mission__contents img {
+  width: 300px;
+}
+.vision-mission__container .mission__contents p {
+  margin-left: 10px;
+}
+
+.staff__header {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin: 250px 0px 130px 0px;
+}
+
+.staff__container {
+  margin: 30px 200px;
+}
+
+.staff__contents {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.staff__items {
+  height: 400px;
+}
+.staff__items p {
+  color: whitesmoke;
+  margin-top: 30px;
+}
+
+.staff__items__header {
+  display: flex;
+  align-items: center;
+}
+.staff__items__header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.staff__items__header .staff__header__text {
+  margin-left: 20px;
+}
+.staff__items__header .staff__header__text h2 {
+  color: white;
+  margin-bottom: 12px;
+}
+.staff__items__header .staff__header__text h3 {
+  color: var(--secondary);
+}
+
 .signin__container {
   width: 100%;
   height: 70vh;
