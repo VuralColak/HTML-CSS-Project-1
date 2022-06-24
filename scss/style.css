@@ -10,6 +10,14 @@
 
 :root {
   --dur: 1s;
+  --primary:#F2F2F2;
+  --secondary:#737373;
+  --dark: #323232;
+  --blau: #1E6AE0;
+  --red:#db0000;
+  --yellow:#FFD714;
+  --green: #3E9C0B;
+  --black: #0D0D0D;
 }
 
 html {
@@ -646,6 +654,109 @@ main {
 .cards .col .card .card-body a button {
   width: 120px;
   font-size: 15px;
+}
+
+.cards .col:hover {
+  transform: scale(1.05);
+}
+
+.signin__container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin__form {
+  border: solid 3px;
+  border-radius: 30px;
+  padding: 60px;
+}
+
+.signin__form__header h1 {
+  color: var(--red);
+  font-size: 40px;
+  text-align: center;
+}
+
+.signin__form__email label {
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+
+.signin__form__password label {
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+
+.signin__form__email input, .signin__form__password input {
+  width: 450px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+}
+
+.signin__form__button button {
+  width: 450px;
+  height: 50px;
+  background-color: var(--red);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+.signin__form__button button:hover {
+  background-color: rgb(146, 5, 5);
+}
+
+.signin__form__link a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.signup__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  margin-top: 50px;
+}
+
+.signup__form {
+  border: solid 3px;
+  border-radius: 30px;
+  padding: 60px;
+}
+.signup__form h1 {
+  color: var(--red);
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.signup__container .signup__form .signup__form__element input {
+  width: 450px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+}
+.signup__container .signup__form .signup__form__element button {
+  width: 450px;
+  height: 50px;
+  background-color: var(--red);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+.signup__container .signup__form .signup__form__element button:hover {
+  background-color: rgb(146, 5, 5);
 }
 
 .footer__line {
