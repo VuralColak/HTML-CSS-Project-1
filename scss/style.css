@@ -870,7 +870,7 @@ main {
     margin-top: 100px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 590px) {
   .contact-contents .contact-left .contact-left__iframe iframe {
     width: 450px;
     height: 300px;
