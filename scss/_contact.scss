@@ -6,16 +6,13 @@
 }
 
 .contact-contents {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    justify-items: center;
-    row-gap: 100px;
-    column-gap: 40px;
+    display: flex;
+    justify-content: center;
     padding: 100px 0px;
 }
 
 .contact-contents .contact-left {
-    
+    padding: 0px 100px;
 
     h1 {
         font-size: 40px;
@@ -50,6 +47,11 @@
         
     }
 
+    .contact-left__iframe iframe {
+        width: 550px;
+        height: 350px;
+    }
+
     .contact-left__element:hover {
         transform: scale(1.1);
     }
@@ -58,6 +60,8 @@
 
 
 .contact-contents .contact-right {
+
+    padding: 0px 100px;
 
     .contact__form .contact__form__element {
 
@@ -108,5 +112,31 @@
             color: #0c4355;
         }
         
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .contact-contents {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .contact-right {
+            margin-top: 100px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .contact-contents {
+
+        .contact-left {
+            .contact-left__iframe iframe {
+                width: 450px;
+                height: 300px;
+            }
+        }
     }
 }
