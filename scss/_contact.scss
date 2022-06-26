@@ -11,7 +11,7 @@
     h1 {
         font-size: 40px;
         color: var(--primary);
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     h3 {
@@ -19,4 +19,26 @@
         color: var(--secondary);
         margin-bottom: 30px;
     }
+
+    .contact-left__element {
+        display: flex;
+        padding: 20px 0px;
+
+        a {
+            text-decoration: none;
+        }
+
+        a p  {
+            color: #FFD166;
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+        .fa-solid {
+            color: #06D6A0;
+            font-size: 35px;
+        }
+        
+    }
+
 }
