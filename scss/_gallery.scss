@@ -1,12 +1,58 @@
+.library__header h1 {
+    text-align: center;
+    font-size: 70px;
+    color: whitesmoke;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.gallery__line {
+    width: 80%;
+    height: 1px;
+    background-color: var(--secondary);
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.pod__header {
+    h2 {
+        font-size: 50px;
+        font-weight: bold;
+        color: var(--secondary);
+        margin: 100px 0px 0px 50px;
+    }
+
+    a {
+
+        img {
+            width: 100%;
+            padding: 0px 50px;
+            margin: 50px 0px;
+        }
+    }
+}
+
+.gallery__header h2 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 100px 0px 90px 0px;
+    letter-spacing: 2px;
+}
+
+
+
+
 #gallery {
     padding: 10px;
     width: 100%;
     display: grid;
-    gap: 5px;
+    gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: 400px;
     grid-auto-flow: dense;
-    background-color: white;
+    background-color: #0B1D26;
 }
 
 
@@ -33,11 +79,12 @@
     grid-column: span 2;
 }
   
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+
     .vertical {
       grid-row: span 1;
     }
-  
+
     .horizontal {
       grid-column: span 1;
     }
@@ -46,4 +93,64 @@
       grid-row: span 1;
       grid-column: span 1;
     }
+
+     .big-horizontal {
+         grid-column: span 1;
+    }
+
+
+
+
+    .library__header h1 {
+        font-size: 50px;
+    }
+    
+    .pod__header {
+
+        h2 {
+            font-size: 40px;
+        }
+    
+    }
+    
+    .gallery__header h2 {
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+
+}
+
+
+
+@media (max-width: 450px) {
+
+    #gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 250px;
+    }
+
+
+    .library__header h1 {
+        font-size: 35px;
+    }
+    
+    .pod__header {
+
+        h2 {
+            font-size: 25px;
+        }
+    
+    }
+    
+    .gallery__header h2 {
+        font-size: 35px;
+        letter-spacing: 2px;
+        margin-bottom: 60px;
+    }
+
+
+
+
+
+
 }
