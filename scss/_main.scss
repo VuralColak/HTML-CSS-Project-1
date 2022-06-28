@@ -105,47 +105,95 @@ main {
 
 
 .main_image .rockets .rocket1 {
-    transform: translateY(2000px);
-    animation: main-rockets 4s forwards 1s;
-  }
+  transform: translateY(-1000px);
+  animation: main-rockets 8s backwards 1.5s;
+}
 
-  .main_image .rockets .rocket2 {
-    transform: translateY(2000px);
-    animation: main-rockets 4s forwards .3s;
-  }
+.main_image .rockets .rocket2 {
+  transform: translateY(-1000px);
+  animation: main-rockets 6s backwards .2s;
+}
 
-  .main_image .rockets .rocket3 {
-    transform: translateY(2000px);
-    animation: main-rockets 4s forwards 1s;
-  }
-  @keyframes main-rockets {
-    from {
-        transform: translateY(1000px);
-      }
-    to {
-      transform: translateY(-2000px);
+.main_image .rockets .rocket3 {
+  transform: translateY(-1000px);
+  animation: main-rockets 7s backwards 1.5s;
+}
+@keyframes main-rockets {
+  0% {
+      transform: translateX(-1500px) translateY(1000px) rotateZ(90deg);
     }
+  50% {
+      transform: translateX(0px) translateY(200px) rotateZ(45deg);
   }
-  
-  
-  
-  
-  
-  .main_image .main_header h1 {
-    transform: translateY(2000px);
-    animation: main-header 2s forwards 1.2s;
+  100% {
+      transform: translateX(800px) translateY(-1000px) rotateZ(0deg);
+  }
+}
+
+
+
+// .main_image .rockets .rocket1 {
+//     transform: translateY(1000px);
+//     animation: main-rockets 7s forwards 1s;
+//   }
+
+//   .main_image .rockets .rocket2 {
+//     transform: translateY(1000px);
+//     animation: main-rockets 6s forwards .3s;
+//   }
+
+//   .main_image .rockets .rocket3 {
+//     transform: translateY(2000px);
+//     animation: main-rockets 7s forwards 1s;
+//   }
+//   @keyframes main-rockets {
+//     from {
+//         transform: translateY(1000px);
+//       }
+//     to {
+//       transform: translateY(-2000px);
+//     }
+//   }
+
+
+
+.main_image .main_header h1 {
+  animation: main-header 3s backwards 6.2s;
+}
+
+.main_image .main_header h3 {
+  animation: main-header 3s backwards 6.3s;
+}
+
+@keyframes main-header {
+  from {
+    opacity: 0;
   }
 
-  .main_image .main_header h3 {
-    transform: translateY(2000px);
-    animation: main-header 2s forwards 1.3s;
+  to {
+    opacity: 1;
   }
+}
+  
+  
+  
+  
+  
+  // .main_image .main_header h1 {
+  //   transform: translateY(2000px);
+  //   animation: main-header 3s forwards 4.2s;
+  // }
 
-  @keyframes main-header {
-    to {
-      transform: translateY(0);
-    }
-  }
+  // .main_image .main_header h3 {
+  //   transform: translateY(2000px);
+  //   animation: main-header 3s forwards 4.3s;
+  // }
+
+  // @keyframes main-header {
+  //   to {
+  //     transform: translateY(0);
+  //   }
+  // }
 
 
 //   rockets animation end
@@ -226,14 +274,28 @@ main {
 
 
 .main_image .main_header .social_media-buttons {
-    transform: translateY(2000px);
-    animation: main-buttons 2s forwards 1.5s;
+  animation: main-buttons 3s backwards 6.4s;
+}
+@keyframes main-buttons {
+  from {
+    opacity: 0;
   }
-  @keyframes main-buttons {
-    to {
-      transform: translateY(0);
-    }
+
+  to {
+    opacity: 1;
   }
+}
+
+
+// .main_image .main_header .social_media-buttons {
+//     transform: translateY(2000px);
+//     animation: main-buttons 3s forwards 4.4s;
+//   }
+//   @keyframes main-buttons {
+//     to {
+//       transform: translateY(0);
+//     }
+//   }
 
 
   @media (max-width: 700px){
@@ -262,6 +324,10 @@ main {
 
 // social medya icons end
 
+
+
+
+// stars animations start
 
 
 
