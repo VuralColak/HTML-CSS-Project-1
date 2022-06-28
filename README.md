@@ -1,7 +1,4 @@
-# HTML-CSS-Project-1
-
-
-## FINAL PROJEKT-PRAXIS
+## HTML-CSS-Project-1
 
 <a href="https://uzay-ve-bilim.netlify.app/index.html" target="_blank"><h3 align="left">Click here for demo</h3></a>
 
@@ -13,7 +10,7 @@
 
 ## General Info
 
-This is a DCI end of chapter project.
+This is a DCI end of chapter project. It is about 14 MB in size.
 
 ## Technologies
 
