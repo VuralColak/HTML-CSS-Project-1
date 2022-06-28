@@ -1,3 +1,28 @@
+.iss {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+
+    iframe {
+        min-width: 200px;
+        max-width: 600px;
+    }
+
+    h1 {
+        color: white;
+        font-size: 40px;
+        margin-top: 30px;
+    }
+
+    h3 {
+        color: var(--secondary);
+        margin-bottom: 50px;
+    }
+}
+
+
 #space-news {
     width: 100%;
     display: flex;

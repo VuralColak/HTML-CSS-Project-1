@@ -843,6 +843,27 @@ main {
   transform: scale(1.05);
 }
 
+.iss {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.iss iframe {
+  min-width: 200px;
+  max-width: 600px;
+}
+.iss h1 {
+  color: white;
+  font-size: 40px;
+  margin-top: 30px;
+}
+.iss h3 {
+  color: var(--secondary);
+  margin-bottom: 50px;
+}
+
 #space-news {
   width: 100%;
   display: flex;
